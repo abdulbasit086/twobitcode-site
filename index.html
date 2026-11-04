@@ -3,139 +3,399 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hi Sara</title>
-  <meta name="description" content="A little hello for Sara.">
+  <title>Two Bit Code — Product Engineering Studio | Web, Mobile, AI & Custom Software</title>
+  <meta name="description" content="Two Bit Code is a product engineering studio. We design, engineer and deliver web applications, mobile apps, custom software and AI-powered solutions that help businesses move forward.">
+  <meta name="theme-color" content="#07080b">
+  <script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";document.documentElement.dataset.theme=t})()</script>
+  <script>(function(){try{if(sessionStorage.getItem("intro")||matchMedia("(prefers-reduced-motion: reduce)").matches)return;sessionStorage.setItem("intro","1")}catch(e){return}document.documentElement.classList.add("intro-on")})()</script>
+  <link rel="canonical" href="https://twobitcode.com/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Two Bit Code">
+  <meta property="og:title" content="Two Bit Code — From Ideas to Intelligent Digital Products">
+  <meta property="og:description" content="We design, engineer and deliver web apps, mobile apps, custom software and AI solutions.">
+  <meta property="og:url" content="https://twobitcode.com/">
+  <meta property="og:image" content="https://twobitcode.com/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #fbf6f1;
-      --bg-accent: #f6e3d6;
-      --ink: #2a1f1a;
-      --muted: #7a6a60;
-      --accent: #d0563b;
-      --card: #ffffff;
-      --shadow: 0 20px 50px -20px rgba(80, 40, 20, 0.35);
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #17120f;
-        --bg-accent: #2a1d16;
-        --ink: #f5ece6;
-        --muted: #b5a397;
-        --accent: #ff8a6b;
-        --card: #221a15;
-        --shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.7);
-      }
-    }
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
 
-    * { box-sizing: border-box; }
-
-    html, body { margin: 0; }
-
-    body {
-      min-height: 100vh;
-      min-height: 100dvh;
-      display: grid;
-      place-items: center;
-      padding: 32px 16px;
-      background:
-        radial-gradient(1200px 600px at 10% 10%, var(--bg-accent), transparent 60%),
-        var(--bg);
-      color: var(--ink);
-      font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-    }
-
-    main {
-      width: 100%;
-      max-width: 1040px;
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      align-items: center;
-      gap: clamp(32px, 6vw, 80px);
-    }
-
-    .greeting h1 {
-      margin: 0;
-      font-family: "Fraunces", Georgia, serif;
-      font-weight: 800;
-      font-size: clamp(64px, 13vw, 168px);
-      line-height: 0.95;
-      letter-spacing: -0.02em;
-    }
-
-    .greeting h1 .name { color: var(--accent); }
-
-    .greeting p {
-      margin: 20px 0 0;
-      font-size: clamp(17px, 2vw, 20px);
-      color: var(--muted);
-    }
-
-    .photo {
-      margin: 0;
-      width: 100%;
-      max-width: 400px;
-      justify-self: center;
-      background: var(--card);
-      border-radius: 20px;
-      padding: 18px 18px 14px;
-      box-shadow: var(--shadow);
-      transform: rotate(2deg);
-    }
-
-    .photo h2 {
-      margin: 0 0 14px;
-      font-family: "Fraunces", Georgia, serif;
-      font-weight: 600;
-      font-size: clamp(20px, 2.4vw, 26px);
-    }
-
-    .photo img {
-      display: block;
-      width: 100%;
-      height: auto;
-      max-height: 62vh;
-      aspect-ratio: 884 / 1160;
-      object-fit: cover;
-      border-radius: 12px;
-      background: var(--bg-accent);
-    }
-
-    .photo figcaption {
-      margin-top: 10px;
-      font-size: 12px;
-      color: var(--muted);
-    }
-
-    .photo figcaption a { color: inherit; }
-
-    @media (max-width: 760px) {
-      main { grid-template-columns: 1fr; text-align: center; }
-      .photo { transform: none; max-width: 420px; margin: 0 auto; text-align: left; }
-    }
-  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ProfessionalService","name":"Two Bit Code","url":"https://twobitcode.com/","description":"Product engineering studio: web applications, mobile apps, custom software, AI and automation.","email":"abdulbasit08620022@gmail.com","serviceType":["Web Application Development","Mobile App Development","Custom Software Development","AI & Automation","UI/UX Design","Cloud & API Engineering"]}
+  </script>
 </head>
 <body>
-  <main>
-    <section class="greeting">
-      <h1>Hi <span class="name">SARA</span></h1>
-      <p>Someone made this page just for you.</p>
-    </section>
+<a class="skip" href="#main">Skip to content</a>
 
-    <figure class="photo">
-      <h2>Here is a picture of him</h2>
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Shawn_Mendes_at_The_Queen%27s_Birthday_Party_%28cropped_2%29.jpg"
-        alt="Shawn Mendes smiling on stage"
-        width="884" height="1160">
-      <figcaption>
-        Shawn Mendes. Photo by Raph_PH,
-        <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>,
-        via <a href="https://commons.wikimedia.org/wiki/File:Shawn_Mendes_at_The_Queen%27s_Birthday_Party_(cropped_2).jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.
-      </figcaption>
-    </figure>
-  </main>
+<!-- ============ INTRO (first visit per session; skipped with reduced motion) ============ -->
+<div class="intro" aria-hidden="true">
+  <div class="hero-grain"></div>
+  <div class="intro-inner">
+    <svg class="intro-mark" viewBox="0 0 28 28"><defs><linearGradient id="ig" x1="0" y1="0" x2="28" y2="28"><stop stop-color="#7aa2ff"/><stop offset=".5" stop-color="#9d7bff"/><stop offset="1" stop-color="#45e1f7"/></linearGradient></defs><rect class="bit-1" x="2" y="6" width="11" height="16" rx="3" fill="url(#ig)"/><rect class="bit-0" x="15.75" y="6.75" width="10.5" height="14.5" rx="2.5" pathLength="100"/></svg>
+    <p class="intro-word"><span>two</span> <span>bit</span> <span class="b">code</span></p>
+    <div class="intro-line"><i></i></div>
+  </div>
+</div>
+<script>
+(function () {
+  var d = document.documentElement;
+  if (!d.classList.contains('intro-on')) return;
+  var done = function () {
+    d.classList.remove('intro-on', 'intro-out');
+    var el = document.querySelector('.intro'); if (el) el.remove();
+  };
+  setTimeout(function () { d.classList.add('intro-out'); }, 1750);
+  setTimeout(done, 2700);
+})();
+</script>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="top">
+  <div class="container nav-inner">
+    <a href="#home" class="logo" aria-label="Two Bit Code home">
+      <svg viewBox="0 0 28 28" aria-hidden="true"><rect x="2" y="6" width="11" height="16" rx="3" fill="url(#lg)"/><rect x="15.75" y="6.75" width="10.5" height="14.5" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/><defs><linearGradient id="lg" x1="0" y1="0" x2="28" y2="28"><stop stop-color="#7aa2ff"/><stop offset=".5" stop-color="#9d7bff"/><stop offset="1" stop-color="#45e1f7"/></linearGradient></defs></svg>
+      <span>two bit <b>code</b></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#approach">Our Approach</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme"><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6L6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4L6 18M18 6l1.4-1.4"/></svg><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+    <a href="#contact" class="btn btn-primary btn-sm nav-cta">Start a Project <span class="arrow" aria-hidden="true">→</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+  </div>
+  <div id="mobile-menu" class="mobile-menu" hidden>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#approach">Our Approach</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary">Start a Project <span class="arrow" aria-hidden="true">→</span></a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true"><canvas class="hero-canvas"></canvas><div class="hero-video"></div><div class="hero-shade"></div><div class="hero-grain"></div></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <h1 class="reveal">From Ideas to <span class="grad">Intelligent</span> Digital&nbsp;Products.</h1>
+      <p class="hero-lead reveal">We design, engineer, and deliver digital solutions that help businesses move forward. From powerful web applications to mobile experiences and custom software, we turn complex challenges into practical technology.</p>
+      <div class="hero-ctas reveal">
+        <a href="#contact" class="btn btn-primary">Start a Project <span class="arrow" aria-hidden="true">→</span></a>
+        <a href="#services" class="btn btn-ghost">Explore Our Services</a>
+      </div>
+      <ul class="hero-meta reveal" aria-label="Core capabilities">
+        <li>Web</li><li>Mobile</li><li>Custom Software</li><li>AI &amp; Automation</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual reveal" aria-hidden="true">
+      <div class="window editor">
+        <div class="window-bar">
+          <span class="dots"><i></i><i></i><i></i></span>
+          <span class="tab">brief.md</span><span class="tab active">product.ts</span>
+        </div>
+<pre class="code"><code><span class="ln"><span class="c">// brief → product</span></span><span class="ln"><span class="k">import</span> { discover, design, build } <span class="k">from</span> <span class="s">"@twobitcode/process"</span>;</span><span class="ln"> </span><span class="ln"><span class="k">const</span> product = <span class="k">await</span> <span class="f">build</span>({</span><span class="ln">  <span class="p">idea</span>: <span class="s">"Booking platform for clinics"</span>,</span><span class="ln">  <span class="p">platforms</span>: [<span class="s">"web"</span>, <span class="s">"ios"</span>, <span class="s">"android"</span>],</span><span class="ln">  <span class="p">ai</span>: { <span class="p">assistant</span>: <span class="n">true</span>, <span class="p">automations</span>: <span class="n">4</span> },</span><span class="ln">  <span class="p">architecture</span>: <span class="s">"scalable"</span>,</span><span class="ln">});</span><span class="ln"> </span><span class="ln"><span class="k">await</span> product.<span class="f">ship</span>(); <span class="c">// ✓ live in production</span><span class="caret"></span></span></code></pre>
+      </div>
+
+      <div class="float card-pipeline">
+        <div class="float-head"><span>Project pipeline</span><span class="tag">live</span></div>
+        <ol class="pipe">
+          <li data-i="0"><i></i>Discover</li>
+          <li data-i="1"><i></i>Design</li>
+          <li data-i="2"><i></i>Build</li>
+          <li data-i="3"><i></i>Launch</li>
+        </ol>
+        <div class="bar"><span></span></div>
+      </div>
+
+      <div class="float card-deploy">
+        <div class="float-head"><span>Build checks</span><span class="ok">● passing</span></div>
+        <ul class="checks">
+          <li><b>✓</b> Unit &amp; integration tests</li>
+          <li><b>✓</b> Accessibility audit</li>
+          <li><b>✓</b> Preview deployed</li>
+        </ul>
+        <svg class="spark" viewBox="0 0 160 36" preserveAspectRatio="none"><path d="M0 28 L16 24 L32 26 L48 18 L64 20 L80 12 L96 15 L112 8 L128 10 L144 5 L160 6" fill="none" stroke="url(#sg)" stroke-width="1.5"/><defs><linearGradient id="sg" x1="0" x2="1"><stop stop-color="#5b8cff"/><stop offset="1" stop-color="#45e1f7"/></linearGradient></defs></svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Web Applications</span><span>SaaS Platforms</span><span>iOS &amp; Android</span><span>Flutter</span><span>LLM Integrations</span><span>Workflow Automation</span><span>APIs &amp; Integrations</span><span>Cloud Infrastructure</span><span>MVPs</span><span>Legacy Modernization</span>
+      <span>Web Applications</span><span>SaaS Platforms</span><span>iOS &amp; Android</span><span>Flutter</span><span>LLM Integrations</span><span>Workflow Automation</span><span>APIs &amp; Integrations</span><span>Cloud Infrastructure</span><span>MVPs</span><span>Legacy Modernization</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHILOSOPHY ============ -->
+<section class="statement" aria-label="Our philosophy">
+  <div class="container">
+    <p class="eyebrow">Our philosophy</p>
+    <p class="statement-text" data-words>We don't just write code. We understand problems, engineer solutions, and build products that create <em>real value.</em></p>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section" id="services">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">What we do</p>
+      <h2>Technology Built Around Your&nbsp;Business.</h2>
+      <p class="lead">Six disciplines, one team. We combine product thinking with engineering depth so every piece fits together — from the first sketch to the production server.</p>
+    </header>
+
+    <div class="services">
+      <article class="svc spot reveal" style="--accent:#7aa2ff">
+        <div class="svc-top"><span class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9h18M6.5 6.5h.01M9 6.5h.01M8 13l-2 2 2 2M16 13l2 2-2 2M13 12.5l-2 5"/></svg></span><span class="num">01</span></div>
+        <h3>Web Application Development</h3>
+        <p>Fast, secure web products engineered to scale with your users and your roadmap.</p>
+        <ul><li>Custom web applications</li><li>SaaS platforms</li><li>Admin dashboards</li><li>Business management systems</li><li>Scalable backend architecture</li></ul>
+      </article>
+      <article class="svc spot reveal" style="--accent:#9d7bff">
+        <div class="svc-top"><span class="icon"><svg viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3M9.5 5.5h5"/></svg></span><span class="num">02</span></div>
+        <h3>Mobile Application Development</h3>
+        <p>Native-feeling iOS and Android apps, built once or built natively — whichever serves you best.</p>
+        <ul><li>Android &amp; iOS applications</li><li>Cross-platform development</li><li>Flutter applications</li><li>API &amp; backend integration</li><li>Maintenance &amp; optimization</li></ul>
+      </article>
+      <article class="svc spot reveal" style="--accent:#45e1f7">
+        <div class="svc-top"><span class="icon"><svg viewBox="0 0 24 24"><path d="M12 3l8 4.5-8 4.5-8-4.5L12 3z"/><path d="M4 12l8 4.5 8-4.5M4 16.5L12 21l8-4.5"/></svg></span><span class="num">03</span></div>
+        <h3>Custom Software Development</h3>
+        <p>Software shaped around how your business actually works — not the other way around.</p>
+        <ul><li>Tailored business software</li><li>Internal management systems</li><li>Enterprise applications</li><li>Workflow digitization</li><li>Legacy system modernization</li></ul>
+      </article>
+      <article class="svc spot reveal" style="--accent:#c38bff">
+        <div class="svc-top"><span class="icon"><svg viewBox="0 0 24 24"><path d="M12 3.5l1.9 5.1 5.1 1.9-5.1 1.9L12 17.5l-1.9-5.1L5 10.5l5.1-1.9L12 3.5z"/><path d="M18.5 16v4M16.5 18h4"/></svg></span><span class="num">04</span></div>
+        <h3>AI &amp; Automation</h3>
+        <p>Practical AI that removes busywork and adds intelligence where it creates measurable value.</p>
+        <ul><li>AI-powered applications</li><li>LLM integrations</li><li>Business process automation</li><li>Intelligent workflows</li><li>Data-driven solutions</li></ul>
+      </article>
+      <article class="svc spot reveal" style="--accent:#6fe3b8">
+        <div class="svc-top"><span class="icon"><svg viewBox="0 0 24 24"><path d="M5 4l6 15 2.2-6 6-2.2L5 4z"/><path d="M14 14l5 5"/></svg></span><span class="num">05</span></div>
+        <h3>UI/UX &amp; Product Engineering</h3>
+        <p>Interfaces people understand instantly, backed by research and validated through prototypes.</p>
+        <ul><li>Product discovery</li><li>Interface design</li><li>Prototyping</li><li>UX optimization</li><li>MVP development</li></ul>
+      </article>
+      <article class="svc spot reveal" style="--accent:#5b8cff">
+        <div class="svc-top"><span class="icon"><svg viewBox="0 0 24 24"><path d="M7 17.5h9.5a4 4 0 0 0 .6-7.95A5.5 5.5 0 0 0 6.6 9.2 4.2 4.2 0 0 0 7 17.5z"/><path d="M9 21h6M12 17.5V21"/></svg></span><span class="num">06</span></div>
+        <h3>Cloud, APIs &amp; Infrastructure</h3>
+        <p>Reliable foundations: clean APIs, sound data models and deployments you don't have to worry about.</p>
+        <ul><li>Backend architecture</li><li>API development &amp; integration</li><li>Cloud deployment</li><li>Database design</li><li>Application maintenance</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY / ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container why">
+    <div class="why-intro reveal">
+      <p class="eyebrow">Why work with us</p>
+      <h2>More Than Development. A Technology&nbsp;Partner.</h2>
+      <p class="lead">We partner with founders and teams who want more than a vendor: people who care about the outcome as much as they do, and say so when something should be built differently.</p>
+    </div>
+    <ol class="why-list">
+      <li class="reveal"><span class="idx">01</span><div><h3>Product builders, not ticket-takers</h3><p>We think about users, adoption and the roadmap — not just the next task on the board.</p></div></li>
+      <li class="reveal"><span class="idx">02</span><div><h3>Problem first, stack second</h3><p>We understand your business problem before proposing any technical solution.</p></div></li>
+      <li class="reveal"><span class="idx">03</span><div><h3>Architecture that lasts</h3><p>Maintainable, well-tested and scalable code, so growth never means starting over.</p></div></li>
+      <li class="reveal"><span class="idx">04</span><div><h3>Clear, transparent communication</h3><p>Regular demos, honest timelines and plain language. You always know where things stand.</p></div></li>
+      <li class="reveal"><span class="idx">05</span><div><h3>Outcomes over output</h3><p>Every decision is weighed against practical business results, not feature counts.</p></div></li>
+      <li class="reveal"><span class="idx">06</span><div><h3>With you from concept to deployment</h3><p>One collaborative team across discovery, design, build, launch and beyond.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section" id="approach">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Our approach</p>
+      <h2>A Clear Path From Concept to&nbsp;Launch.</h2>
+      <p class="lead">A structured process that keeps risk low and momentum high — with you involved at every stage.</p>
+    </header>
+
+    <div class="process reveal">
+      <div class="steps" role="tablist" aria-label="Process stages">
+        <button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true" class="step"><span class="step-n">01</span><span class="step-t">Discover</span><span class="step-bar"><i></i></span></button>
+        <button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1" class="step"><span class="step-n">02</span><span class="step-t">Strategize &amp; Design</span><span class="step-bar"><i></i></span></button>
+        <button role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1" class="step"><span class="step-n">03</span><span class="step-t">Build &amp; Iterate</span><span class="step-bar"><i></i></span></button>
+        <button role="tab" id="tab-4" aria-controls="panel-4" aria-selected="false" tabindex="-1" class="step"><span class="step-n">04</span><span class="step-t">Launch &amp; Evolve</span><span class="step-bar"><i></i></span></button>
+      </div>
+
+      <div class="panels">
+        <div role="tabpanel" id="panel-1" aria-labelledby="tab-1" class="panel">
+          <p class="panel-log">&gt; stage 01/04 · discover</p>
+          <h3>Understand your business, requirements, users, and challenges.</h3>
+          <p>We start with questions, not code. Through workshops and research we map your goals, your users, your constraints and what success looks like.</p>
+          <ul class="deliv"><li>Problem &amp; goals brief</li><li>User &amp; stakeholder map</li><li>Requirements &amp; scope</li><li>Risks &amp; assumptions</li></ul>
+        </div>
+        <div role="tabpanel" id="panel-2" aria-labelledby="tab-2" class="panel" hidden>
+          <p class="panel-log">&gt; stage 02/04 · strategize &amp; design</p>
+          <h3>Define the solution, architecture, user experience, and roadmap.</h3>
+          <p>We turn insight into a plan: the right architecture, clear user flows and a clickable prototype you can put in front of real people.</p>
+          <ul class="deliv"><li>Solution architecture</li><li>UX flows &amp; wireframes</li><li>UI design &amp; prototype</li><li>Roadmap &amp; milestones</li></ul>
+        </div>
+        <div role="tabpanel" id="panel-3" aria-labelledby="tab-3" class="panel" hidden>
+          <p class="panel-log">&gt; stage 03/04 · build &amp; iterate</p>
+          <h3>Develop, test, refine, and continuously improve the product.</h3>
+          <p>Short iterations with working software at the end of each one. You see progress early, give feedback often and steer with confidence.</p>
+          <ul class="deliv"><li>Iterative sprints</li><li>Code reviews &amp; automated tests</li><li>Regular demos</li><li>Staging environment</li></ul>
+        </div>
+        <div role="tabpanel" id="panel-4" aria-labelledby="tab-4" class="panel" hidden>
+          <p class="panel-log">&gt; stage 04/04 · launch &amp; evolve</p>
+          <h3>Deploy the solution, monitor performance, and provide ongoing support.</h3>
+          <p>A calm, well-rehearsed launch — followed by monitoring, measurement and continued iteration as your product and users grow.</p>
+          <ul class="deliv"><li>Production deployment</li><li>Monitoring &amp; analytics</li><li>Documentation &amp; handover</li><li>Ongoing support</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Selected work</p>
+      <h2>Ideas We've Turned Into&nbsp;Technology.</h2>
+      <p class="lead">Full case studies are on the way. Until then, these clearly marked placeholders show the kinds of products we build.</p>
+    </header>
+    <!-- Projects are rendered from assets/config.js → SITE_CONFIG.projects -->
+    <div class="projects" id="project-grid"></div>
+  </div>
+</section>
+
+<!-- ============ STACK ============ -->
+<section class="section" id="stack">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Technology</p>
+      <h2>The Right Tools for the Right&nbsp;Solution.</h2>
+      <p class="lead">We choose technology based on your product's needs — performance, budget, team and long-term maintenance — never on habit.</p>
+    </header>
+    <div class="stack">
+      <div class="stack-col reveal"><h3>Frontend</h3><ul><li>React</li><li>Next.js</li><li>Flutter</li></ul></div>
+      <div class="stack-col reveal"><h3>Backend</h3><ul><li>Node.js</li><li>Laravel</li><li>Python</li><li>.NET</li></ul></div>
+      <div class="stack-col reveal"><h3>Databases</h3><ul><li>PostgreSQL</li><li>MySQL</li><li>Firebase</li><li>MongoDB</li></ul></div>
+      <div class="stack-col reveal"><h3>Cloud &amp; Infra</h3><ul><li>AWS</li><li>Google Cloud</li><li>Docker</li><li>GitHub</li></ul></div>
+      <div class="stack-col reveal"><h3>AI &amp; Automation</h3><ul><li>Python</li><li>OpenAI APIs</li><li>LLM integrations</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="container contact">
+    <div class="contact-intro reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Have an Idea? Let's Build Something That&nbsp;Matters.</h2>
+      <p class="lead">Whether you're starting from scratch, improving an existing product, or looking for a technology partner, we'd love to hear what you're working on.</p>
+      <ol class="next">
+        <li><span>1</span><div><b>Tell us about your idea</b><p>A few lines is enough — no technical spec required.</p></div></li>
+        <li><span>2</span><div><b>We get back to you personally</b><p>A real engineer reads every inquiry and replies.</p></div></li>
+        <li><span>3</span><div><b>Discovery call</b><p>We talk through goals, scope and the best way forward.</p></div></li>
+      </ol>
+      <p class="direct">Prefer email? <a class="js-email" href="mailto:abdulbasit08620022@gmail.com">abdulbasit08620022@gmail.com</a></p>
+    </div>
+
+    <div class="form-card reveal">
+      <form id="contact-form" novalidate>
+        <div class="row">
+          <div class="field"><label for="f-name">Full name <em>*</em></label><input id="f-name" name="name" type="text" autocomplete="name" required maxlength="100" aria-describedby="e-name"><p class="err" id="e-name"></p></div>
+          <div class="field"><label for="f-email">Business email <em>*</em></label><input id="f-email" name="email" type="email" autocomplete="email" required maxlength="160" aria-describedby="e-email"><p class="err" id="e-email"></p></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="f-phone">Phone / WhatsApp <span>optional</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel" maxlength="30" aria-describedby="e-phone"><p class="err" id="e-phone"></p></div>
+          <div class="field"><label for="f-company">Company / Organization <span>optional</span></label><input id="f-company" name="company" type="text" autocomplete="organization" maxlength="120"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="f-service">What do you need? <em>*</em></label>
+            <select id="f-service" name="service" required aria-describedby="e-service">
+              <option value="">Select a service</option>
+              <option>Web Application</option><option>Mobile Application</option><option>Custom Software</option><option>AI &amp; Automation</option><option>UI/UX Design</option><option>Cloud &amp; Infrastructure</option><option>Something Else</option>
+            </select><p class="err" id="e-service"></p></div>
+          <div class="field"><label for="f-budget">Estimated budget <span>optional</span></label>
+            <select id="f-budget" name="budget">
+              <option value="">Not sure yet</option>
+              <option>Under $5,000</option><option>$5,000 – $15,000</option><option>$15,000 – $50,000</option><option>$50,000+</option>
+            </select></div>
+        </div>
+        <div class="field"><label for="f-message">Tell us about your idea <em>*</em></label><textarea id="f-message" name="message" rows="5" required minlength="20" maxlength="4000" aria-describedby="e-message c-message" placeholder="What are you building, who is it for, and where are you today?"></textarea>
+          <div class="field-foot"><p class="err" id="e-message"></p><span class="count" id="c-message">0 / 4000</span></div></div>
+
+        <!-- Spam protection: honeypot (hidden from humans) -->
+        <div class="hp" aria-hidden="true"><label for="f-website">Website</label><input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+
+        <div class="form-alert" role="alert" hidden></div>
+        <button type="submit" class="btn btn-primary btn-block"><span class="btn-label">Send Project Inquiry</span><span class="spinner" aria-hidden="true"></span></button>
+        <p class="form-note">By sending, you agree we may contact you about your inquiry. We never share your details.</p>
+      </form>
+
+      <div class="form-success" hidden tabindex="-1">
+        <div class="tick" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+        <h3>Inquiry received.</h3>
+        <p>Thanks for reaching out — we'll read through your idea and get back to you personally.</p>
+        <button type="button" class="btn btn-ghost js-reset">Send another inquiry</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final">
+  <div class="container">
+    <div class="final-panel reveal">
+      <div class="final-bg" aria-hidden="true"></div>
+      <p class="eyebrow">Ready when you are</p>
+      <h2>Your Next Big Idea Deserves Great&nbsp;Engineering.</h2>
+      <a href="#contact" class="btn btn-primary btn-lg">Let's Build It Together <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="logo"><svg viewBox="0 0 28 28" aria-hidden="true"><rect x="2" y="6" width="11" height="16" rx="3" fill="url(#lg)"/><rect x="15.75" y="6.75" width="10.5" height="14.5" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><span>two bit <b>code</b></span></a>
+      <p>A product engineering studio turning ideas into working digital products — web, mobile, custom software and AI.</p>
+      <ul class="social">
+        <li><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M6.5 9.5v8M6.5 6.5v.01M10.5 17.5v-8M10.5 13a3 3 0 0 1 6 0v4.5"/><rect x="2.5" y="2.5" width="19" height="19" rx="4"/></svg></a></li>
+        <li><a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M9 19c-4 1.3-4-2-6-2.5M15 21v-3.5a3 3 0 0 0-.9-2.4c3-.3 6-1.4 6-6.5a5 5 0 0 0-1.4-3.5 4.7 4.7 0 0 0-.1-3.5s-1.1-.3-3.6 1.4a12.4 12.4 0 0 0-6.5 0C6 1.3 4.9 1.6 4.9 1.6a4.7 4.7 0 0 0-.1 3.5A5 5 0 0 0 3.4 8.6c0 5 3 6.2 6 6.5a3 3 0 0 0-.9 2.4V21"/></svg></a></li>
+        <li><a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24"><path d="M4 4l16 16M20 4L4 20"/></svg></a></li>
+      </ul>
+    </div>
+    <nav aria-label="Footer navigation"><h4>Navigate</h4><ul><li><a href="#services">Services</a></li><li><a href="#approach">Our Approach</a></li><li><a href="#projects">Projects</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+    <div><h4>Services</h4><ul><li><a href="#services">Web Applications</a></li><li><a href="#services">Mobile Apps</a></li><li><a href="#services">Custom Software</a></li><li><a href="#services">AI &amp; Automation</a></li><li><a href="#services">Cloud &amp; APIs</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li><a class="js-email" href="mailto:abdulbasit08620022@gmail.com">abdulbasit08620022@gmail.com</a></li><li><a href="#contact">Start a project</a></li></ul></div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year">2026</span> Two Bit Code. All rights reserved.</p>
+    <ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul>
+  </div>
+</footer>
+
+<script src="assets/config.js"></script>
+<script src="assets/main.js" defer></script>
+<script src="assets/hero.js" defer></script>
 </body>
 </html>
