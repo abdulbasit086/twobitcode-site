@@ -17,8 +17,8 @@ window.SITE_CONFIG = {
     // GitHub Pages hosting → Web3Forms. To activate: put your key in access_key below and set
     // endpoint to 'https://api.web3forms.com/submit'. While endpoint is empty, the form shows an
     // 'email us directly' message instead of sending.
-    endpoint: '',
-    extraFields: { access_key: '', subject: 'New project inquiry — twobitcode.com', from_name: 'Two Bit Code website' },
+    endpoint: 'https://api.web3forms.com/submit',
+    extraFields: { access_key: '790c89eb-9fc1-4296-b2fe-d02d270f3865', subject: 'New project inquiry — twobitcode.com', from_name: 'Two Bit Code website' },
     minFillMs: 2500,      // submissions faster than this are treated as bots
     timeoutMs: 15000,
   },
