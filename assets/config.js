@@ -23,36 +23,42 @@ window.SITE_CONFIG = {
     timeoutMs: 15000,
   },
 
-  /* Portfolio. badge: small label on the preview ('In-house product', 'Client project', …).
-     mock: 'web' | 'mobile' | 'ai' | 'flow' (screens drawn in main.js)   accent: any CSS color   url: optional case-study link */
+  /* Portfolio.
+     image: real screenshot (shown in a browser frame)  — or —  mock: 'web' | 'mobile' | 'ai' | 'flow' (screens drawn in main.js)
+     theme: 'mint' | 'warm' | 'ink' (look of a drawn screen)   accent: any CSS color
+     url: optional link (opens in a new tab)   badge: optional small label on the preview */
   projects: [
     {
+      title: 'Attachment Guard',
+      category: 'SaaS · Xero integration',
+      description: 'Holds each approved Xero invoice until its proof of delivery, timesheet or signed job sheet is attached, then sends it from the business\'s own Outlook or Gmail.',
+      tags: ['Xero integration', 'Outlook & Gmail', 'Live product'],
+      image: 'assets/projects/attachmentguard.png', urlLabel: 'attachmentguard.com',
+      url: 'https://attachmentguard.com', accent: '#ff6a2b',
+    },
+    {
+      theme: 'mint',
       title: 'Tallyroom',
       category: 'Web Application · SaaS',
       description: 'Finance operations for small businesses: invoicing, cash-flow forecasting and client billing in one dashboard.',
       tags: ['Next.js', 'Node.js', 'PostgreSQL'],
-      mock: 'web', accent: '#7aa2ff',
+      mock: 'web', accent: '#10b981',
     },
     {
+      theme: 'warm',
       title: 'CareSlot',
       category: 'Mobile Application',
       description: 'A patient booking app for clinics: find a doctor, pick a slot and get reminders, on iOS and Android from one codebase.',
       tags: ['Flutter', 'Firebase', 'REST API'],
-      mock: 'mobile', accent: '#9d7bff',
+      mock: 'mobile', accent: '#f4664a',
     },
     {
+      theme: 'ink',
       title: 'Quarry',
       category: 'AI & Automation',
       description: 'An AI assistant that answers team questions from company documents, citing the source behind every answer.',
       tags: ['Python', 'OpenAI API', 'Vector search'],
-      mock: 'ai', accent: '#45e1f7',
-    },
-    {
-      title: 'Signoff',
-      category: 'Custom Software',
-      description: 'Purchase approvals without email chains: requests move through manager and finance review with a full audit trail.',
-      tags: ['Laravel', 'MySQL', 'Docker'],
-      mock: 'flow', accent: '#6fe3b8',
+      mock: 'ai', accent: '#e9b949',
     },
   ],
 };

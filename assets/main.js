@@ -141,14 +141,20 @@
   if (grid && Array.isArray(cfg.projects)) {
     grid.innerHTML = cfg.projects.map((p, i) => {
       const tag = p.url ? 'a' : 'article';
-      const href = p.url ? ` href="${esc(p.url)}"` : '';
-      return `<${tag} class="proj reveal"${href} style="--accent:${esc(p.accent || '#7aa2ff')};--d:${(i % 2) * 0.08}s">
-        <div class="proj-visual" aria-hidden="true">${p.badge ? `<span class="badge">${esc(p.badge)}</span>` : ''}${(mocks[p.mock] || mocks.web)()}</div>
+      const href = p.url ? ` href="${esc(p.url)}" target="_blank" rel="noopener"` : '';
+      const label = p.urlLabel || (p.url || '').replace(/^https?:\/\//, '').replace(/\/$/, '');
+      const visual = p.image
+        ? `<div class="proj-visual is-shot"><div class="mock shot"><div class="u-bar"><i></i><i></i><i></i><span class="u-url">${esc(label)}</span></div>
+            <img src="${esc(p.image)}" alt="${esc(p.title)} website screenshot" loading="lazy" decoding="async" width="2160" height="1350"></div></div>`
+        : `<div class="proj-visual" aria-hidden="true">${(mocks[p.mock] || mocks.web)()}</div>`;
+      return `<${tag} class="proj reveal${p.theme ? ' t-' + esc(p.theme) : ''}"${href} style="--accent:${esc(p.accent || '#7aa2ff')};--d:${(i % 2) * 0.08}s">
+        ${visual.replace('">', `">${p.badge ? `<span class="badge">${esc(p.badge)}</span>` : ''}`)}
         <div class="proj-body">
           <p class="proj-cat">${esc(p.category)}</p>
           <h3>${esc(p.title)}</h3>
           <p>${esc(p.description)}</p>
           <ul class="tags">${(p.tags || []).map(t => `<li>${esc(t)}</li>`).join('')}</ul>
+          ${p.url ? `<span class="proj-link">Visit ${esc(label)} <span aria-hidden="true">↗</span></span>` : ''}
         </div></${tag}>`;
     }).join('');
   }
