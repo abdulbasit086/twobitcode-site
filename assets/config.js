@@ -45,12 +45,12 @@ window.SITE_CONFIG = {
       accent: '#2dd4bf',
     },
     {
-      theme: 'mint',
-      title: 'Tallyroom',
-      category: 'Web Application · SaaS',
-      description: 'Finance operations for small businesses: invoicing, cash-flow forecasting and client billing in one dashboard.',
-      tags: ['Next.js', 'Node.js', 'PostgreSQL'],
-      mock: 'web', accent: '#10b981',
+      title: 'TimTim',
+      category: 'SaaS · Mobile app builder',
+      description: 'Turns Shopify and WooCommerce stores into branded native iOS and Android apps, built automatically in the cloud, with app-only offers and announcement banners.',
+      tags: ['Shopify & WooCommerce', 'iOS & Android', 'Live product'],
+      image: 'assets/projects/timtim.jpg',
+      accent: '#3fbf5a',
     },
     {
       theme: 'warm',
