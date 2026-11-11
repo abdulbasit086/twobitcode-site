@@ -143,7 +143,11 @@
       const tag = p.url ? 'a' : 'article';
       const href = p.url ? ` href="${esc(p.url)}" target="_blank" rel="noopener"` : '';
       const label = p.urlLabel || (p.url || '').replace(/^https?:\/\//, '').replace(/\/$/, '');
-      const visual = p.image
+      // phones: real app screenshots shown in phone frames (mobile apps)
+      const visual = Array.isArray(p.phones) && p.phones.length
+        ? `<div class="proj-visual is-phones"><div class="mock phone-shots n${Math.min(p.phones.length, 3)}">${p.phones.slice(0, 3).map((src, k) =>
+            `<figure class="pf"><img src="${esc(src)}" alt="${esc(p.title)} app screen ${k + 1}" loading="lazy" decoding="async"></figure>`).join('')}</div></div>`
+        : p.image
         ? `<div class="proj-visual is-shot"><div class="mock shot"><div class="u-bar"><i></i><i></i><i></i>${label ? `<span class="u-url">${esc(label)}</span>` : ''}</div>
             <img src="${esc(p.image)}" alt="${esc(p.title)} website screenshot" loading="lazy" decoding="async" width="1600" height="1000"></div></div>`
         : `<div class="proj-visual" aria-hidden="true">${(mocks[p.mock] || mocks.web)()}</div>`;

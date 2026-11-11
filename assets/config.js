@@ -53,12 +53,12 @@ window.SITE_CONFIG = {
       accent: '#3fbf5a',
     },
     {
-      theme: 'warm',
-      title: 'CareSlot',
-      category: 'Mobile Application',
-      description: 'A patient booking app for clinics: find a doctor, pick a slot and get reminders, on iOS and Android from one codebase.',
-      tags: ['Flutter', 'Firebase', 'REST API'],
-      mock: 'mobile', accent: '#f4664a',
+      title: 'Burmi',
+      category: 'Mobile app · Flutter & Firebase',
+      description: 'Event management for societies across Pakistan: societies create and run events, members discover and register, and QR tickets are scanned at the door.',
+      tags: ['Flutter', 'Firebase', 'QR ticketing'],
+      phones: ['assets/projects/burmi-bulletin.jpg', 'assets/projects/burmi-discover.jpg', 'assets/projects/burmi-profile.jpg'],
+      accent: '#7b62c9',
     },
   ],
 };
