@@ -33,7 +33,7 @@ window.SITE_CONFIG = {
       category: 'SaaS · Xero integration',
       description: 'Holds each approved Xero invoice until its proof of delivery, timesheet or signed job sheet is attached, then sends it from the business\'s own Outlook or Gmail.',
       tags: ['Xero integration', 'Outlook & Gmail', 'Live product'],
-      image: 'assets/projects/attachmentguard.jpg', urlLabel: 'attachmentguard.com',
+      image: 'assets/projects/attachmentguard.jpg',
       accent: '#ff6a2b',
     },
     {
@@ -41,7 +41,7 @@ window.SITE_CONFIG = {
       category: 'SaaS · Desktop & mobile apps',
       description: 'Time tracking for software and IT teams: one-click timers on Windows, Linux, Android, iPhone and browsers that keep counting offline, plus reports by person, project and task with Excel export.',
       tags: ['Desktop & mobile apps', 'Offline sync', 'Live product'],
-      image: 'assets/projects/timetracker.jpg', urlLabel: 'timetrackersoftwarehq.com',
+      image: 'assets/projects/timetracker.jpg',
       accent: '#2dd4bf',
     },
     {
