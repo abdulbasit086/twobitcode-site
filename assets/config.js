@@ -27,7 +27,6 @@ window.SITE_CONFIG = {
      mock: 'web' | 'mobile' | 'ai' | 'flow' (screens drawn in main.js)   accent: any CSS color   url: optional case-study link */
   projects: [
     {
-      badge: 'In-house product',
       title: 'Tallyroom',
       category: 'Web Application · SaaS',
       description: 'Finance operations for small businesses: invoicing, cash-flow forecasting and client billing in one dashboard.',
@@ -35,7 +34,6 @@ window.SITE_CONFIG = {
       mock: 'web', accent: '#7aa2ff',
     },
     {
-      badge: 'In-house product',
       title: 'CareSlot',
       category: 'Mobile Application',
       description: 'A patient booking app for clinics: find a doctor, pick a slot and get reminders, on iOS and Android from one codebase.',
@@ -43,7 +41,6 @@ window.SITE_CONFIG = {
       mock: 'mobile', accent: '#9d7bff',
     },
     {
-      badge: 'In-house product',
       title: 'Quarry',
       category: 'AI & Automation',
       description: 'An AI assistant that answers team questions from company documents, citing the source behind every answer.',
@@ -51,7 +48,6 @@ window.SITE_CONFIG = {
       mock: 'ai', accent: '#45e1f7',
     },
     {
-      badge: 'In-house product',
       title: 'Signoff',
       category: 'Custom Software',
       description: 'Purchase approvals without email chains: requests move through manager and finance review with a full audit trail.',
