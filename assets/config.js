@@ -23,38 +23,38 @@ window.SITE_CONFIG = {
     timeoutMs: 15000,
   },
 
-  /* Portfolio. Set placeholder:false and fill in real details as case studies are ready.
-     mock: 'web' | 'mobile' | 'ai' | 'flow'   accent: any CSS color   url: optional case-study link */
+  /* Portfolio. badge: small label on the preview ('In-house product', 'Client project', …).
+     mock: 'web' | 'mobile' | 'ai' | 'flow' (screens drawn in main.js)   accent: any CSS color   url: optional case-study link */
   projects: [
     {
-      placeholder: true,
-      title: 'Operations SaaS Platform',
+      badge: 'In-house product',
+      title: 'Tallyroom',
       category: 'Web Application · SaaS',
-      description: 'Concept slot for a multi-tenant platform with role-based dashboards, reporting and billing.',
+      description: 'Finance operations for small businesses: invoicing, cash-flow forecasting and client billing in one dashboard.',
       tags: ['Next.js', 'Node.js', 'PostgreSQL'],
       mock: 'web', accent: '#7aa2ff',
     },
     {
-      placeholder: true,
-      title: 'Cross-Platform Customer App',
+      badge: 'In-house product',
+      title: 'CareSlot',
       category: 'Mobile Application',
-      description: 'Concept slot for an iOS & Android app with accounts, bookings and push notifications.',
+      description: 'A patient booking app for clinics: find a doctor, pick a slot and get reminders, on iOS and Android from one codebase.',
       tags: ['Flutter', 'Firebase', 'REST API'],
       mock: 'mobile', accent: '#9d7bff',
     },
     {
-      placeholder: true,
-      title: 'AI Knowledge Assistant',
+      badge: 'In-house product',
+      title: 'Quarry',
       category: 'AI & Automation',
-      description: 'Concept slot for an LLM-powered assistant that answers questions from internal documents.',
+      description: 'An AI assistant that answers team questions from company documents, citing the source behind every answer.',
       tags: ['Python', 'OpenAI API', 'Vector search'],
       mock: 'ai', accent: '#45e1f7',
     },
     {
-      placeholder: true,
-      title: 'Workflow Automation Suite',
+      badge: 'In-house product',
+      title: 'Signoff',
       category: 'Custom Software',
-      description: 'Concept slot for digitizing a manual approval process into an automated, auditable workflow.',
+      description: 'Purchase approvals without email chains: requests move through manager and finance review with a full audit trail.',
       tags: ['Laravel', 'MySQL', 'Docker'],
       mock: 'flow', accent: '#6fe3b8',
     },

@@ -108,17 +108,34 @@
   /* ---------- projects (rendered from config) ---------- */
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const sk = (w, hi) => `<div class="sk${hi ? ' hi' : ''}" style="width:${w}%"></div>`;
+  // Product screens drawn in HTML/CSS (sizes scale with the card via container units).
   const mocks = {
-    web: () => `<div class="mock m-browser"><div class="m-bar"><i></i><i></i><i></i></div><div class="m-body">
-      <div class="m-side">${sk(80, 1)}${sk(60)}${sk(70)}${sk(50)}${sk(65)}</div>
-      <div class="m-main">${sk(40)}<div class="m-kpis"><div></div><div></div><div></div></div>
-      <div class="m-chart">${[40, 65, 45, 80, 60, 90, 70, 100, 85].map(h => `<span style="height:${h}%"></span>`).join('')}</div></div></div></div>`,
-    mobile: () => {
-      const phone = (off) => `<div class="m-phone" style="transform:translateY(${off}px)"><div class="hero-b"></div>${sk(70)}${sk(45)}<div class="card"></div><div class="card"></div><div class="card"></div></div>`;
-      return `<div class="mock" style="inset:12% 0 auto;display:flex;justify-content:center;gap:16px">${phone(24)}${phone(0)}${phone(36)}</div>`;
-    },
-    ai: () => `<div class="mock m-chat"><div class="bub me">${sk(90)}${sk(50)}</div><div class="bub">${sk(95)}${sk(80)}${sk(60, 1)}</div><div class="bub me">${sk(70)}</div><div class="m-input"></div></div>`,
-    flow: () => `<div class="mock m-flow"><div class="node">${sk(60)}</div><div class="wire"></div><div class="node hi">${sk(60, 1)}</div><div class="wire"></div><div class="node">${sk(60)}</div><div class="wire"></div><div class="node">${sk(60)}</div></div>`,
+    web: () => `<div class="mock ui u-web"><div class="u-bar"><i></i><i></i><i></i><span class="u-url">app.tallyroom.io/overview</span></div>
+      <div class="u-app"><aside class="u-side"><b class="u-logo"><s></s>Tallyroom</b><span class="on">Overview</span><span>Invoices</span><span>Cash flow</span><span>Clients</span><span>Reports</span></aside>
+      <div class="u-main"><div class="u-head"><b>Overview</b><span class="u-pill">Nov 2026</span></div>
+        <div class="u-kpis"><div><small>Revenue</small><b>£48.2k</b><em>+12%</em></div><div><small>Outstanding</small><b>£6.1k</b></div><div><small>Invoices paid</small><b>132</b></div></div>
+        <div class="u-chart">${[38, 52, 44, 63, 58, 72, 66, 84, 79, 92].map(h => `<span style="height:${h}%"></span>`).join('')}</div>
+        <div class="u-rows"><div><span>INV-2041 · Northside Café</span><em class="ok">Paid</em></div><div><span>INV-2042 · Brightway Studio</span><em class="due">Due</em></div></div>
+      </div></div></div>`,
+    mobile: () => `<div class="mock ui u-phones">
+      <div class="u-phone"><div class="u-status">9:41</div><small>Good morning</small><b class="u-h">Book a visit</b>
+        <div class="u-dates"><span>Mon<br>10</span><span class="on">Tue<br>11</span><span>Wed<br>12</span><span>Thu<br>13</span></div>
+        <div class="u-doc"><i>OM</i><div><b>Dr. Omar Malik</b><small>General physician</small></div><em>10:30</em></div>
+        <div class="u-doc"><i>HR</i><div><b>Dr. Hina Raza</b><small>Dermatology</small></div><em>14:00</em></div>
+        <div class="u-btn">Continue</div></div>
+      <div class="u-phone u-phone-b"><div class="u-status">9:42</div><div class="u-check">✓</div><b class="u-h c">Appointment confirmed</b><small class="c">Tue 11 Nov · 10:30</small>
+        <div class="u-card"><i>OM</i><div><b>Dr. Omar Malik</b><small>Room 4 · City Clinic</small></div></div>
+        <div class="u-btn ghost">Add to calendar</div><div class="u-btn ghost">Get directions</div></div></div>`,
+    ai: () => `<div class="mock ui u-chat"><div class="u-chat-h"><b><s></s>Quarry</b><span class="u-pill">Workspace: Handbook</span></div>
+      <div class="u-msg me">What's our refund policy for annual plans?</div>
+      <div class="u-msg">Annual plans can be refunded in full within 30 days of purchase. After that, unused months are credited to the account.
+        <div class="u-src"><span>Billing-policy.pdf · p.4</span><span>Help centre › Refunds</span></div></div>
+      <div class="u-input"><span>Ask anything about your docs…</span><i>↑</i></div></div>`,
+    flow: () => `<div class="mock ui u-flow"><div class="u-chat-h"><b><s></s>Signoff</b><span class="u-pill">Purchase requests</span></div>
+      <div class="u-stages"><span class="done">Submitted</span><span class="done">Manager</span><span class="now">Finance</span><span>Approved</span></div>
+      <div class="u-req"><i>SK</i><div><b>Laptops for design team</b><small>£1,450 · requested by Sana K.</small></div><em class="now">Finance review</em></div>
+      <div class="u-req"><i>AR</i><div><b>Annual design tool licence</b><small>£540 · requested by Ali R.</small></div><em class="ok">Approved</em></div>
+      <div class="u-req"><i>MZ</i><div><b>Office chairs × 6</b><small>£1,020 · requested by Maha Z.</small></div><em>Manager</em></div></div>`,
   };
   const grid = $('#project-grid');
   if (grid && Array.isArray(cfg.projects)) {
@@ -126,7 +143,7 @@
       const tag = p.url ? 'a' : 'article';
       const href = p.url ? ` href="${esc(p.url)}"` : '';
       return `<${tag} class="proj reveal"${href} style="--accent:${esc(p.accent || '#7aa2ff')};--d:${(i % 2) * 0.08}s">
-        <div class="proj-visual" aria-hidden="true">${p.placeholder ? '<span class="badge">Placeholder project</span>' : ''}${(mocks[p.mock] || mocks.web)()}</div>
+        <div class="proj-visual" aria-hidden="true">${p.badge ? `<span class="badge">${esc(p.badge)}</span>` : ''}${(mocks[p.mock] || mocks.web)()}</div>
         <div class="proj-body">
           <p class="proj-cat">${esc(p.category)}</p>
           <h3>${esc(p.title)}</h3>
