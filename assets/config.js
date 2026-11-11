@@ -33,8 +33,16 @@ window.SITE_CONFIG = {
       category: 'SaaS · Xero integration',
       description: 'Holds each approved Xero invoice until its proof of delivery, timesheet or signed job sheet is attached, then sends it from the business\'s own Outlook or Gmail.',
       tags: ['Xero integration', 'Outlook & Gmail', 'Live product'],
-      image: 'assets/projects/attachmentguard.png', urlLabel: 'attachmentguard.com',
-      url: 'https://attachmentguard.com', accent: '#ff6a2b',
+      image: 'assets/projects/attachmentguard.jpg', urlLabel: 'attachmentguard.com',
+      accent: '#ff6a2b',
+    },
+    {
+      title: 'TimeTracker',
+      category: 'SaaS · Desktop & mobile apps',
+      description: 'Time tracking for software and IT teams: one-click timers on Windows, Linux, Android, iPhone and browsers that keep counting offline, plus reports by person, project and task with Excel export.',
+      tags: ['Desktop & mobile apps', 'Offline sync', 'Live product'],
+      image: 'assets/projects/timetracker.jpg', urlLabel: 'timetrackersoftwarehq.com',
+      accent: '#2dd4bf',
     },
     {
       theme: 'mint',
@@ -51,14 +59,6 @@ window.SITE_CONFIG = {
       description: 'A patient booking app for clinics: find a doctor, pick a slot and get reminders, on iOS and Android from one codebase.',
       tags: ['Flutter', 'Firebase', 'REST API'],
       mock: 'mobile', accent: '#f4664a',
-    },
-    {
-      theme: 'ink',
-      title: 'Quarry',
-      category: 'AI & Automation',
-      description: 'An AI assistant that answers team questions from company documents, citing the source behind every answer.',
-      tags: ['Python', 'OpenAI API', 'Vector search'],
-      mock: 'ai', accent: '#e9b949',
     },
   ],
 };

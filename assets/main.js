@@ -145,7 +145,7 @@
       const label = p.urlLabel || (p.url || '').replace(/^https?:\/\//, '').replace(/\/$/, '');
       const visual = p.image
         ? `<div class="proj-visual is-shot"><div class="mock shot"><div class="u-bar"><i></i><i></i><i></i><span class="u-url">${esc(label)}</span></div>
-            <img src="${esc(p.image)}" alt="${esc(p.title)} website screenshot" loading="lazy" decoding="async" width="2160" height="1350"></div></div>`
+            <img src="${esc(p.image)}" alt="${esc(p.title)} website screenshot" loading="lazy" decoding="async" width="1600" height="1000"></div></div>`
         : `<div class="proj-visual" aria-hidden="true">${(mocks[p.mock] || mocks.web)()}</div>`;
       return `<${tag} class="proj reveal${p.theme ? ' t-' + esc(p.theme) : ''}"${href} style="--accent:${esc(p.accent || '#7aa2ff')};--d:${(i % 2) * 0.08}s">
         ${visual.replace('">', `">${p.badge ? `<span class="badge">${esc(p.badge)}</span>` : ''}`)}
