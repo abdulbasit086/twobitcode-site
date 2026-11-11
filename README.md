@@ -8,6 +8,7 @@ assets/styles.css   design system + all styles
 assets/main.js      interactions, project rendering, form logic
 assets/config.js    ← edit this: email, form endpoint, portfolio projects
 api/contact.js      contact form backend (Vercel function → Resend email)
+image-to-pdf/       free Images-to-PDF tool (runs in the browser, not linked from the homepage)
 ```
 
 ## Before launch — replace placeholders
